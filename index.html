@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flames</title>
+    <style>
+        form, div {
+            width: 40%;
+            margin: 3px;
+            margin:auto;
+            padding: 10px;
+        }
+        .result-area {
+            width: 80%;
+            border: 2px solid grey;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+   
+    <nav>
+        <a href="#">FLAMES</a>
+    </nav>
+    <form method="GET" action="#">
+        <input type="text" id="fname" value="" placeholder="first name">
+        <input type="text" id="sname" value="" placeholder="second name">
+        <input type="submit" id="flames" value="Flames" onclick="myFlamesFun()">
+        
+    </form>
+    <div class="result-area">
+        <div class="test">
+            <input type="text" id="fname-result" placeholder="fisrt result">
+            <input type="text" id="sname-result" placeholder="second result">
+        </div>
+        <div class="names">
+            <span>Lengths of Names -></span>
+            <span id = 'fresult'>First result</span>
+            <span> + </span>
+            <span id='sresult'>Second result</span>
+        </div>
+        <div class="arrays">
+            <span id = 'fresarr'>First Array result</span>
+            <span> + </span>
+            <span id='sresarr'>Second Array result</span>
+        </div>
+        <div class="process">
+            <p id="first-count">After Cross the Letters</p>
+            
+            <p id="second-count">Remaining Count</p>
+
+            <p id="result-string">Relation is </p>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->  <!-- using hard code -->
+    <script src="app.js"></script>             <!-- using looping and arrays -->
+</body>
+</html>
